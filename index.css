@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100dvh;
+}
+
+form{
+    margin: 1rem 20%;
+    text-align: center;
+    & h3{
+        margin-bottom: 0.5rem;
+    }
+    & input{
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+    }
+    & button{
+        padding: 0.5rem;
+        border: none;
+        background-color: #4CAF50;
+        border-radius: 0.5rem;
+        margin-left: 1rem;
+        cursor: pointer;
+    }
+}
+h1,bag{
+    text-align: center;
+    margin-top: 1rem;
+    color : #4381d7;
+}
+p.item{
+    margin: 1rem 20%;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #fbb030;
+    color: #565656;
+    & a{
+        background-color: transparent;
+        border: none;
+        font-weight: bold;
+        color: #d1152b;
+        float: right;
+        cursor: pointer;
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask App</title>
+    <link rel="stylesheet" href="../static/index.css">
+</head>
+<body>
+    <h1>Welcome to the Flask App</h1>
+    <p>This is a simple Flask application with HTML and CSS.</p>
+    <form action = "/add" method = "POST">
+        <label for = "name">name</label>
+        <input type = "number" name = "amount" id = "amount">
+        <button type = "submit">Add</button>
+    </form>
+    {% for item in data%}
+    <p class = "item">{{item.name}}x{{item.amount}}
+        <a href = "{{url_for('delete', item_id=item.id)}}">X</a>
+    </p>
+    {% endfor %}
+</body>
+</html>
