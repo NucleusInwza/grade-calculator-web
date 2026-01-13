@@ -1,2 +1,3 @@
 # grade-calculator-web
-grade calc
+เว็บไซต์คำนวณเกรด
+พัฒนาโดยใช้ Python สำหรับประมวลผลข้อมูล
